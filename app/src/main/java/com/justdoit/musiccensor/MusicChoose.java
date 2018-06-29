@@ -13,15 +13,10 @@ import android.widget.TextView;
 
 public class MusicChoose extends AppCompatActivity {
 
-    private TextView textView;
-    private Button button;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_choose);
-        textView = (TextView)findViewById(R.id.textView);
-        button = (Button)findViewById(R.id.playButton);
     }
 
     private void loadAudio() {
@@ -31,13 +26,13 @@ public class MusicChoose extends AppCompatActivity {
         if (cursor == null) {
             // error in getting audio
             Log.i("345678", "Could not get audio!");
-            textView.setText("No media found!");
+
         } else if (!cursor.moveToFirst()) {
             // no media on the device
             Log.i("456789", "No media found!");
-            textView.setText("No media found!");
+
         } else {
-            textView.setText("Getting audio!");
+
             int titleColumn = cursor.getColumnIndex(MediaStore.Audio.Media.TITLE);
             int columnID = cursor.getColumnIndex(android.provider.MediaStore.Audio.Media._ID);
             do {
@@ -49,8 +44,6 @@ public class MusicChoose extends AppCompatActivity {
     }
 
     public void playMusic(View view) {
-        // when play music button is pressed
-        textView.setText("Yeah");
-
+        System.out.println("");
     }
 }
