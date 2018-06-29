@@ -11,12 +11,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MusicChoose extends AppCompatActivity {
+// Variable
+    TextView musicText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_choose);
+        musicText = (TextView)findViewById(R.id.textView);
     }
 
     private void loadAudio() {
@@ -44,6 +50,6 @@ public class MusicChoose extends AppCompatActivity {
     }
 
     public void playMusic(View view) {
-        System.out.println("");
+        musicText.setText("Music playing...");
     }
 }

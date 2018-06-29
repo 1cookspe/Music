@@ -8,10 +8,30 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:onClick="playMusic"
-        android:text="Play Music"
+        android:text="Music"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="72dp" />
+        tools:layout_editor_absoluteY="72dp"
+        android:gravity="center"
+        android:includeFontPadding="false" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="38dp" />
 </android.support.constraint.ConstraintLayout>
