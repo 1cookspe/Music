@@ -36,7 +36,7 @@ public class MusicChoose extends AppCompatActivity implements SpotifyPlayer.Noti
 
     // Spotify variables
     private static final String CLIENT_ID = "13afc7f99e5a4a1998e279b07c685ba3";
-    private static final String REDIRECT_URI = "1cookspe.github.io";
+    private static final String REDIRECT_URI = "https://1cookspe.github.io";
     // Request code that will be used to verify if the result comes from correct activity
     // Can be any integer
     private static final int REQUEST_CODE = 1337;
