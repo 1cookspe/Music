@@ -22,6 +22,7 @@
         <activity
             android:name="com.spotify.sdk.android.authentication.LoginActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!-- read data playing from spotify: https://developer.spotify.com/documentation/android-sdk/guides/android-media-notifications/ -->
     </application>
 
 </manifest>
